@@ -62,6 +62,8 @@ public class CartActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle("Cart");
 
+        // testing part
+
 
         mToolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_back_arrow));
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
