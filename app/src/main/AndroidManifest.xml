@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.mysantinis">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="clover.permission.POP_CASH_DRAWER_NEW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/santiniss"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/santiniss"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2"
+        android:name=".General"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="false"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:hardwareAccelerated="false">
+        <activity android:name=".getStarted.SplashActivity">
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".getStarted.LoginActivity"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="Orders" />
+        <activity
+            android:name=".activity.CreateOrderActivity"
+            android:theme="@style/AppTheme"
+            android:label="Create Order" />
+        <activity android:name=".activity.CartActivity"/>
+        <activity android:name=".activity.NewOrderNotificationActivity" />
+        <activity android:name=".activity.SelectRestaurantActivity" />
+        <activity android:name=".activity.OrderDetailsActivity" />
+        <activity android:name=".cloverprint.PrinterStartupActivity" />
+        <activity android:name=".cloverprint.barcode.BarcodeCaptureActivity" />
+        <activity android:name=".cloverprint.POSActivity" />
+        <activity android:name=".starprnt.PrinterSetupActivity" />
+        <activity android:name=".starprnt.CommonActivity" />
+    </application>
+
+</manifest>

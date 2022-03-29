@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/location" />
+
+    <ImageView
+        android:id="@+id/imageView_round"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/overlay"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/santinis_wlogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imageView_round"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/s"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/text_newyork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/santinis_wlogo"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="New York Style Deli"
+        android:textColor="@color/white"
+        android:textSize="38dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_newyork2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_newyork"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="A family tradition since 2003."
+        android:textColor="@color/silver"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_newyork2"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Pick your restaurant"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="12dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:onClick="onSelect"
+            android:layout_marginTop="50dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Santis version 1(1.0)"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"/>
+</RelativeLayout>

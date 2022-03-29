@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MySantinis</string>
+    <string name="incoming_orders">Today Orders</string>
+    <string name="finished">Finished</string>
+    <string name="accept_print"><![CDATA[Accept & Print]]></string>
+    <string name="tax_fees"><![CDATA[Tax & Fees]]></string>
+    <string name="low_storage_error">Device is low on storage space</string>
+    <string name="barcode_error_format">Error obtaining barcode: %s</string>
+    <string name="usb_clover_connector">USB Clover Connector</string>
+    <string name="lan_pay_display">Network Clover Connector</string>
+    <string name="native_display">Native App Integration</string>
+    <string name="scan_qr_code">Scan QRCode</string>
+    <string name="lan_pay_address">wss://10.249.254.197:12345/remote_pay</string>
+    <string name="tap_anywhere_to_accept">Tap anywhere to accept</string>
+    <string name="printer_setting_icon">printer setting icon</string>
+    <string name="create_order">Create Order</string>
+    <string name="select_restaurant">Select Restaurant</string>
+    <string name="printer_settings">Printer Settings</string>
+    <string name="print_close_out">Print Close Out</string>
+    <string name="print_out_font_size">Print Out Font Size</string>
+    <string name="close_restaurant">Close Restaurant</string>
+    <string name="accepted">Accepted</string>
+    <string name="not_accepted">Not Accepted</string>
+</resources>

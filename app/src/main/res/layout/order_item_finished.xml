@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:id="@+id/tblLayoutOrdersFinished"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cemail"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <!-- <Button
+                android:id="@+id/button_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seekBar"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:text="Print"
+                android:textSize="15sp"
+                android:onClick="clickPrint"
+                /> -->
+
+            <TextView
+                android:id="@+id/CloverID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="15sp"
+                android:visibility="invisible">
+            </TextView>
+
+            <TextView
+                android:id="@+id/delayTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="15sp"
+                android:text="0"
+                android:visibility="invisible">
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Line 4"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

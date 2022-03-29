@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_notification"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_circle"/>
+            <TextView
+                android:id="@+id/txt_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="80sp"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Order"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tap_anywhere_to_accept"
+            android:textColor="@color/border_color_login"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <Button
+        android:onClick="onTap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"/>
+
+</RelativeLayout>

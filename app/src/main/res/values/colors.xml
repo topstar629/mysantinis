@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#900800</color>
+    <color name="colorPrimaryDark">#900800</color>
+    <color name="colorAccent">#900800</color>
+    <color name="background">#FFFFFF</color>
+    <color name="restonOriginalColor">#790600</color>
+    <color name="greyColor">#888888</color>
+    <color name="white">#FFFFFF</color>
+    <color name="border_color_login">#E5E5E5</color>
+    <color name="silver">#F4D2AF</color>
+    <color name="transparent">#0000</color>
+    <color name="dark_font">#333</color>
+    <color name="lightgrey">#d3d3d3</color>
+
+    <color name="disabled_text">#404285f4</color>
+    <color name="blue">#0000FF</color>
+    <color name="red">#FF0000</color>
+
+</resources>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/restaurant_settings"
+        android:title="Select Restaurant"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_restaurant"/>
+    <item
+        android:id="@+id/printer_settings"
+        android:title="Select Restaurant"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_printer_settings"/>
+
+
+</menu>

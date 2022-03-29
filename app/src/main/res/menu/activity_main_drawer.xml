@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/createOrder"
+            android:title="@string/create_order" />
+        <item
+            android:id="@+id/select_restaurant"
+            android:title="@string/select_restaurant" />
+        <item
+            android:id="@+id/close_restaurant"
+            android:title="@string/close_restaurant" />
+        <item
+            android:id="@+id/printer_settings"
+            android:title="@string/printer_settings" />
+        <item
+            android:id="@+id/print_out_font_size"
+            android:title="@string/print_out_font_size" />
+        <item
+            android:id="@+id/print_close_out"
+            android:title="@string/print_close_out" />
+        <!--
+        <item
+            android:id="@+id/attendence"
+            android:icon="@drawable/s"
+            android:title="Attendence" />
+        <item
+            android:id="@+id/result"
+            android:icon="@drawable/s"
+            android:title="Results" /> -->
+    </group>
+
+</menu>

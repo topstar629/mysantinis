@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/z_toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_cart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:layout_weight="2">
+    </androidx.recyclerview.widget.RecyclerView >
+
+    <!-- Start Client -->
+    <LinearLayout
+        android:id="@+id/clientInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_above="@+id/proceed_to_book"
+        android:orientation="horizontal">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/c_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/c_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/c_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cell Phone"
+                android:inputType="phone"/>
+
+            <EditText
+                android:id="@+id/c_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email address"
+                android:inputType="textEmailAddress"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- End Client -->
+
+    <LinearLayout
+        android:id="@+id/proceed_to_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight=".1"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="right|center_vertical"
+            android:padding="15dp"
+            android:text="PROCEED"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/grand_total_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.4"
+            android:gravity="left|center_vertical"
+            android:padding="15dp"
+            android:text="Rs. 3400"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
